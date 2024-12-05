@@ -1,91 +1,90 @@
-
+/* Style global */
 body {
-  background-color: rgb(232, 144, 20);
-  color: rgb(56, 51, 50);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20 px;
-  line-height: normal;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #272822;
+  color: #f8f8f2;
 }
 
-h1, h2 {
-  color: rgb(86, 9, 9);
-  font-size: 40px;
-  line-height: normal;
-}
-p {
-    display: block;
-   text-align: center;
-   margin-bottom: 40px;
+/* Sidebar */
+#sidebar {
+  width: 18%;
+  background-color: #1e1f1c;
+  padding: 15px;
+  float: left;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);;
 }
 
-ul {
+#sidebar h1 {
+  color: #a6e22e;
+}
+
+#sidebar ul {
   list-style: none;
-  padding: 0px;
-}
-li {
-  font-size: 60px;
-  display: inline;
-  text-align: center;
-}
-a {
-  font-style: oblique;
-  padding: 10px;
+  padding: 0;
 }
 
-a :hover {
-  color: chocolate;
-}
-.container {
-  width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
- #image {
-  border-radius: 40%;
- }
-
- .first_block {
-  background-color: rgb(248, 229, 199);
-  margin: 20px;
-  padding: 50px;
-  border: 5px dotted rgb(104, 77, 10);
-  box-shadow: 0 5px 10px rgb(138, 2, 2);
-  border-radius: 20%;
- }
-
-.second_block {
-  background-color: rgb(248, 229, 199);
-  margin: 20px;
-  padding: 10px;
-  border: 5px dotted rgb(104, 77, 10);
-  text-align: center;
-  box-shadow: 0 5px 10px rgb(138, 2, 2);
-  border-radius: 10%;
+#sidebar ul li {
+  margin-bottom: 10px;
 }
 
-.link {
-  background-color: #fbcd00;
-  color: rgb(0, 0, 0);
-  padding: 15px 20px;
-  border-radius: 4px;
-  margin-bottom: 40px;
-  box-shadow:0px 20px 30px rgb(255, 255, 255);
+#sidebar ul li a {
+  color: #66d9ef;
+  text-decoration: none;
+  font-family: "Courier New", monospace;
 }
 
-@media (max-width: 960px) {
-  .container {
-    width: 700px;
-  }
+#sidebar ul li a:hover {
+  text-decoration: underline;
 }
 
-@media (max-width: 720px) {
-  .container {
-    width: 500px;
-  }
+/* Contenu principal */
+#content {
+  margin-left: 20%;
+  padding: 20px;
+  font-family: "Courier New", monospace;
 }
 
-@media (max-width: 540px) {
-  .container {
-    width: 300px;
-  }
+.section {
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #1e1f1c;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #f8f8f2;
+  overflow: auto;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* Syntax Highlighting */
+.comment {
+  color: #75715e;
+}
+
+.keyword {
+  color: #f92672;
+}
+
+.tag {
+  color: #a6e22e;
+}
+
+.attribute {
+  color: #66d9ef;
+}
+
+.sql-keyword {
+  color: #f92672;
+}
+
+#img{
+  width: 200px;
+  height: 300px;
+  padding: 10px ;
+  border-radius: 8px;
 }
